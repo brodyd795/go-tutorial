@@ -14,9 +14,9 @@ func Hello(name string) (string, error) {
 	}
 
 	// Return a greeting that embeds the name in a message.
-	// message := fmt.Sprintf(randomFormat(), name)
+	message := fmt.Sprintf(randomFormat(), name)
 	// to fail the test
-	message := fmt.Sprintf(randomFormat())
+	// message := fmt.Sprintf(randomFormat())
 	return message, nil
 }
 
@@ -81,3 +81,6 @@ func randomFormat() string {
 // was surprised to see that the debugging to "just worked". Maybe there was something in the recommended extensions that I installed? Cool anyway
 // test output is a bit hard to read
 // interesting to see that the regexp package had a built-in MustCompile method
+
+// compilation was nice and fast :)
+// can I direct the executable to a /build directory or something? I need to gitignore it, but I'd have to do that manually for every package...
