@@ -2,7 +2,9 @@
 
 https://go.dev/doc/tutorial/getting-started
 
-### Thoughts
+## Thoughts
+
+### Create a Module
 
 #### Summary
 Overall, pleasantly surprised with Go! Definitely interested in playing around with it more. 
@@ -37,3 +39,19 @@ Overall, pleasantly surprised with Go! Definitely interested in playing around w
 - docs aren't consistent about showing changed lines in tutorials
 - slice initialization syntax is unexpected. Why {} instead of []?
 - can I direct the executable to a /build directory or something? I need to gitignore it, but I'd have to do that manually for every package...
+
+### Accessing a relational database
+
+#### Summary
+- Custom type definitions are nice and intuitive given TS background. Still not sure what a "struct" is.
+- Nice how they have a wiki with recommended RDBMS drivers. Saw drivers for PG as well. 
+- Connection to db was fairly intuitive given Node background as well. 
+- Unsure of difference between log and fmt
+- Hope they have something like JS's template strings. This string formatting is getting old quick.
+- Also hope they have good ORM options
+- Syntax of for loop was surprising, and simple
+- Absolutely no idea what's going on in this conditional:
+```
+if err := rows.Scan(&alb.ID, &alb.Title, &alb.Artist, &alb.Price); err != nil {
+```
+- Overall pleased with how easy the db connection and querying worked!
