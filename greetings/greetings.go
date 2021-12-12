@@ -14,7 +14,9 @@ func Hello(name string) (string, error) {
 	}
 
 	// Return a greeting that embeds the name in a message.
-	message := fmt.Sprintf(randomFormat(), name)
+	// message := fmt.Sprintf(randomFormat(), name)
+	// to fail the test
+	message := fmt.Sprintf(randomFormat())
 	return message, nil
 }
 
@@ -72,3 +74,10 @@ func randomFormat() string {
 // neet use of init function that runs automatically
 // docs aren't consistent about showing changed lines in tutorials
 // slice initialization syntax is unexpected. Why {} instead of []?
+
+// testing
+// love that testing capability comes out of the box!
+// interesting use of TestFunctionName syntax for declaring tests, and filename_test.go for test files
+// was surprised to see that the debugging to "just worked". Maybe there was something in the recommended extensions that I installed? Cool anyway
+// test output is a bit hard to read
+// interesting to see that the regexp package had a built-in MustCompile method
