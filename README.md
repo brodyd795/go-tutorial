@@ -55,3 +55,14 @@ Overall, pleasantly surprised with Go! Definitely interested in playing around w
 if err := rows.Scan(&alb.ID, &alb.Title, &alb.Artist, &alb.Price); err != nil {
 ```
 - Overall pleased with how easy the db connection and querying worked!
+
+### RESTful API
+
+#### Summary
+- Once again pleased with how familiar this is with respect to setting up similar code in JS! Nothing too crazy.
+- Setting up the handlers was pretty familiar (Express in JS)
+- Gin's `BindJSON` was a bit unexpected. I guess this is how we assign the payload to the variable?
+- Interesting how the keyword `append` works. Different from JS, but intuitive enough.
+- Easy access to request's params.
+- Awesome how Gin provides the `IndentedJSON` method in addition to the plain `JSON` method. Wonder if Express/Hapi have this?
+- I like how the server outputted the handlers and associated functions on started. One weird thing was that it said there were `3 handlers` for each of the handlers (same no matter how many handlers there were). Wonder why this is? Otherwise the server output was decent enough.
