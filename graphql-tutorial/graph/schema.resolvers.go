@@ -36,6 +36,7 @@ func (r *mutationResolver) UpsertCharacter(ctx context.Context, input model.Char
 		r.Resolver.CharacterStore[*id] = character
 	} else {
 		// generate unique id
+		// what's this doing?
 		nid := strconv.Itoa(n + 1)
 		character.ID = nid
 		if input.IsHero != nil {
@@ -47,11 +48,14 @@ func (r *mutationResolver) UpsertCharacter(ctx context.Context, input model.Char
 	return &character, nil
 }
 
+// what is the `r *queryResolver`?
 func (r *queryResolver) Character(ctx context.Context, id string) (*model.Character, error) {
+	// how does this `r.Resolver.CharacterStore[id]` work?
 	character, ok := r.Resolver.CharacterStore[id]
 	if !ok {
 		return nil, fmt.Errorf("not found")
 	}
+	// what's this `&character` about?
 	return &character, nil
 }
 
