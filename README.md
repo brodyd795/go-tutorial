@@ -66,3 +66,18 @@ if err := rows.Scan(&alb.ID, &alb.Title, &alb.Artist, &alb.Price); err != nil {
 - Easy access to request's params.
 - Awesome how Gin provides the `IndentedJSON` method in addition to the plain `JSON` method. Wonder if Express/Hapi have this?
 - I like how the server outputted the handlers and associated functions on started. One weird thing was that it said there were `3 handlers` for each of the handlers (same no matter how many handlers there were). Wonder why this is? Otherwise the server output was decent enough.
+
+### Tour of Go
+
+https://go.dev/tour/list
+
+- "Factored import statements" are apparently good style. Interesting difference from JS. I guess it's a bit more concise!
+- Naked return functions?? Fascinating.
+- Cool use of factoring variable declarations into blocks.
+- Note: type conversions must always be explicit
+- Only one looping construct??? That's different.
+- If statement parentheses are apparently optional. Interesting.
+- Cool that if statements can have a pre-execution variable declaration. Wonder how useful that will be in practice.
+- Defer statement is super cool. Wonder how often that's used as well.
+- Pointers. What?
+- Interesting instantiation of structs. 
