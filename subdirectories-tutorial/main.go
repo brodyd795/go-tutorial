@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-
-	h "subdirectories/api/handlers"
+	"subdirectories/api/handlers"
 )
 
 func main() {
 	fmt.Println("Hello")
-	h.HandlerA()
+	//h.HandlerA()
+	handlers.HandlerA()
 }
